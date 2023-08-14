@@ -11,7 +11,7 @@ public class RegisterResultPage extends Utils{
         String actualMessage = getTextFromElement(By.xpath("//div[@class='result']"));
 
         System.out.println("My massage:"+actualMessage);
-        //Close URL
+
         Assert.assertEquals(actualMessage,loadProp.getProperty("expectedRegistrationCompleteMsg"));
     }
 

@@ -19,8 +19,7 @@ public class Hooks extends Utils{
 
             byte[] src = ts.getScreenshotAs(OutputType.BYTES);
             scenario.attach(src,"image/png","screenshot");
-
-           // driverManager.closeBrowser();
         }
+        driverManager.closeBrowser();
     }
 }

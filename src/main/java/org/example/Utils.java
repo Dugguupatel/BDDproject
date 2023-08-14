@@ -19,7 +19,6 @@ public class Utils  extends BasePage{
     public static void clickOnElements(By by) {
         driver.findElement(by).click();
     }
-
     public static void typetext(By by, String text) {
         driver.findElement(by).sendKeys(text);
     }
@@ -27,6 +26,9 @@ public class Utils  extends BasePage{
         return driver.findElement(by).getText();
     }
 
+public static String getCurrentURL(){
+        return driver.getCurrentUrl();
+}
     public static long timestamp() {
         Timestamp timestamp1 = new Timestamp(System.currentTimeMillis());
         return timestamp1.getTime();
